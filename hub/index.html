@@ -1,0 +1,493 @@
+﻿<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Social Media Strategy Hub Indonesia 2026 | TikTok · YouTube Shorts · Facebook Reels</title>
+  <meta name="description" content="Dashboard strategi posting optimal untuk TikTok, YouTube Shorts, dan Facebook Reels Indonesia 2026. Live WIB Clock menampilkan waktu terbaik posting secara real-time." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Bebas+Neue&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ===== NAVBAR ===== -->
+  <nav class="navbar">
+    <div class="nav-brand">
+      <div class="brand-dots">
+        <span class="bd bd--tt"></span>
+        <span class="bd bd--yt"></span>
+        <span class="bd bd--fb"></span>
+      </div>
+      <span class="brand-name">SOSMED<span class="brand-accent">HUB</span></span>
+    </div>
+    <div class="nav-links">
+      <a href="../tiktok/" target="_blank" class="nlink nlink--tt">TikTok</a>
+      <a href="../yt-shorts/" target="_blank" class="nlink nlink--yt">YouTube Shorts</a>
+      <a href="../fb-reels/" target="_blank" class="nlink nlink--fb">Facebook Reels</a>
+    </div>
+    <div class="nav-time-mini" id="nav-time-mini">--:--</div>
+  </nav>
+
+  <!-- ===== HERO — LIVE CLOCK ===== -->
+  <header class="hero">
+    <div class="hero-bg-grid"></div>
+
+    <div class="hero-inner">
+      <div class="hero-eyebrow">
+        <span class="eye-tag">📊 DASHBOARD STRATEGI</span>
+        <span class="eye-sep">·</span>
+        <span class="eye-txt">Indonesia 2026</span>
+        <span class="eye-sep">·</span>
+        <span class="eye-live"><span class="live-dot"></span> LIVE</span>
+      </div>
+
+      <h1 class="hero-title">
+        KAPAN WAKTU<br>
+        <span class="ht--gradient">TERBAIK</span><br>
+        POSTING<span class="ht--blink">_</span>
+      </h1>
+
+      <!-- MEGA CLOCK -->
+      <div class="mega-clock" id="mega-clock">
+        <div class="mc-top">
+          <div class="mc-zone-label">WAKTU INDONESIA BARAT</div>
+          <div class="mc-zone-sub">WIB · GMT+7 · Jakarta</div>
+        </div>
+        <div class="mc-time-row">
+          <div class="mc-digits" id="mc-digits">00:00</div>
+          <div class="mc-right">
+            <div class="mc-seconds" id="mc-seconds">00</div>
+            <div class="mc-ampm" id="mc-ampm">WIB</div>
+          </div>
+        </div>
+        <div class="mc-bottom">
+          <div class="mc-day" id="mc-day">---</div>
+          <div class="mc-date" id="mc-date">-- April 2026</div>
+        </div>
+        <div class="mc-pulse-ring"></div>
+      </div>
+
+      <!-- CURRENT WINDOW STATUS -->
+      <div class="window-status" id="window-status">
+        <div class="ws-label">JENDELA AKTIF SEKARANG</div>
+        <div class="ws-name" id="ws-name">Menghitung...</div>
+        <div class="ws-desc" id="ws-desc">–</div>
+      </div>
+    </div>
+
+    <!-- Animated lines -->
+    <div class="hero-line hero-line--tt"></div>
+    <div class="hero-line hero-line--yt"></div>
+    <div class="hero-line hero-line--fb"></div>
+  </header>
+
+  <!-- ===== 3 PLATFORM STATUS CARDS ===== -->
+  <section class="platforms-section">
+    <div class="container">
+      <div class="platforms-header">
+        <div class="ph-title">STATUS REAL-TIME · 3 PLATFORM</div>
+        <div class="ph-sub" id="ph-sub">Update setiap 30 detik · Berdasarkan jam WIB sekarang</div>
+      </div>
+
+      <div class="platform-cards">
+
+        <!-- TikTok -->
+        <div class="pcard pcard--tt" id="pcard-tt">
+          <div class="pcard-header">
+            <div class="pcard-logo pcard-logo--tt">
+              <span class="logo-icon-tt">♪</span>
+              <span>TikTok</span>
+            </div>
+            <div class="pcard-status" id="tt-status-badge">
+              <span class="pstatus-dot" id="tt-dot"></span>
+              <span id="tt-status-text">Menganalisis...</span>
+            </div>
+          </div>
+
+          <div class="pcard-clock-display">
+            <div class="pcd-label">JAM TERBAIK HARI INI</div>
+            <div class="pcd-times" id="tt-best-times">–</div>
+          </div>
+
+          <div class="pcard-insights">
+            <div class="pi-title">📌 INSIGHT HARI INI</div>
+            <div class="pi-item" id="tt-day-insight">–</div>
+          </div>
+
+          <div class="pcard-metrics">
+            <div class="pm-item">
+              <div class="pm-val">1–3</div>
+              <div class="pm-lbl">Post/Hari Optimal</div>
+            </div>
+            <div class="pm-item pm-item--accent">
+              <div class="pm-val" id="tt-window-status">–</div>
+              <div class="pm-lbl">Status Sekarang</div>
+            </div>
+            <div class="pm-item">
+              <div class="pm-val">WIB</div>
+              <div class="pm-lbl">Zona Primer</div>
+            </div>
+          </div>
+
+          <div class="pcard-now-bar" id="tt-now-bar">
+            <div class="pnb-label">REKOMENDASI SEKARANG</div>
+            <div class="pnb-text" id="tt-now-text">–</div>
+          </div>
+
+          <a href="../tiktok/" target="_blank" class="pcard-cta pcard-cta--tt" id="pcard-tt-cta">
+            Lihat Strategi Lengkap →
+          </a>
+        </div>
+
+        <!-- YouTube Shorts -->
+        <div class="pcard pcard--yt" id="pcard-yt">
+          <div class="pcard-header">
+            <div class="pcard-logo pcard-logo--yt">
+              <span class="logo-icon-yt">▶</span>
+              <span>YouTube Shorts</span>
+            </div>
+            <div class="pcard-status" id="yt-status-badge">
+              <span class="pstatus-dot" id="yt-dot"></span>
+              <span id="yt-status-text">Menganalisis...</span>
+            </div>
+          </div>
+
+          <div class="pcard-clock-display">
+            <div class="pcd-label">JAM TERBAIK HARI INI</div>
+            <div class="pcd-times" id="yt-best-times">–</div>
+          </div>
+
+          <div class="pcard-insights">
+            <div class="pi-title">📌 INSIGHT HARI INI</div>
+            <div class="pi-item" id="yt-day-insight">–</div>
+          </div>
+
+          <div class="pcard-metrics">
+            <div class="pm-item">
+              <div class="pm-val">3–5</div>
+              <div class="pm-lbl">Post/Minggu Optimal</div>
+            </div>
+            <div class="pm-item pm-item--accent-yt">
+              <div class="pm-val" id="yt-window-status">–</div>
+              <div class="pm-lbl">Status Sekarang</div>
+            </div>
+            <div class="pm-item">
+              <div class="pm-val">VVSA</div>
+              <div class="pm-lbl">Metrik Kunci</div>
+            </div>
+          </div>
+
+          <div class="pcard-now-bar pcard-now-bar--yt" id="yt-now-bar">
+            <div class="pnb-label">REKOMENDASI SEKARANG</div>
+            <div class="pnb-text" id="yt-now-text">–</div>
+          </div>
+
+          <a href="../yt-shorts/" target="_blank" class="pcard-cta pcard-cta--yt" id="pcard-yt-cta">
+            Lihat Strategi Lengkap →
+          </a>
+        </div>
+
+        <!-- Facebook Reels -->
+        <div class="pcard pcard--fb" id="pcard-fb">
+          <div class="pcard-header">
+            <div class="pcard-logo pcard-logo--fb">
+              <span class="logo-icon-fb">f</span>
+              <span>Facebook Reels</span>
+            </div>
+            <div class="pcard-status" id="fb-status-badge">
+              <span class="pstatus-dot" id="fb-dot"></span>
+              <span id="fb-status-text">Menganalisis...</span>
+            </div>
+          </div>
+
+          <div class="pcard-clock-display">
+            <div class="pcd-label">JAM TERBAIK HARI INI</div>
+            <div class="pcd-times" id="fb-best-times">–</div>
+          </div>
+
+          <div class="pcard-insights">
+            <div class="pi-title">📌 INSIGHT HARI INI</div>
+            <div class="pi-item" id="fb-day-insight">–</div>
+          </div>
+
+          <div class="pcard-metrics">
+            <div class="pm-item">
+              <div class="pm-val">1–2</div>
+              <div class="pm-lbl">Post/Hari Optimal</div>
+            </div>
+            <div class="pm-item pm-item--accent-fb">
+              <div class="pm-val" id="fb-window-status">–</div>
+              <div class="pm-lbl">Status Sekarang</div>
+            </div>
+            <div class="pm-item">
+              <div class="pm-val">185JT</div>
+              <div class="pm-lbl">Pengguna Indonesia</div>
+            </div>
+          </div>
+
+          <div class="pcard-now-bar pcard-now-bar--fb" id="fb-now-bar">
+            <div class="pnb-label">REKOMENDASI SEKARANG</div>
+            <div class="pnb-text" id="fb-now-text">–</div>
+          </div>
+
+          <a href="../fb-reels/" target="_blank" class="pcard-cta pcard-cta--fb" id="pcard-fb-cta">
+            Lihat Strategi Lengkap →
+          </a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== DAILY SCHEDULE TABLE ===== -->
+  <section class="schedule-section">
+    <div class="container">
+      <div class="sched-header">
+        <div class="section-tag">📅 JADWAL HARIAN GABUNGAN</div>
+        <h2 class="sched-title">PETA WAKTU OPTIMAL<br><span class="sched-title--day" id="sched-today">HARI INI</span></h2>
+      </div>
+
+      <div class="time-grid">
+        <!-- Header -->
+        <div class="tg-head">
+          <div class="tgh-time">WAKTU</div>
+          <div class="tgh-platform tgh-platform--tt">♪ TikTok</div>
+          <div class="tgh-platform tgh-platform--yt">▶ YouTube</div>
+          <div class="tgh-platform tgh-platform--fb">f Facebook</div>
+        </div>
+
+        <!-- 06:00 - 09:00 -->
+        <div class="tg-row" data-hour-start="6" data-hour-end="9">
+          <div class="tg-time">06:00<br><span>09:00</span></div>
+          <div class="tg-cell tg-cell--none">
+            <div class="tc-inner">😴 Tidak Direkomendasikan</div>
+          </div>
+          <div class="tg-cell tg-cell--ok">
+            <div class="tc-inner">🌅 Mobilitas Pagi<br><small>Atensi terpecah</small></div>
+          </div>
+          <div class="tg-cell tg-cell--good">
+            <div class="tc-inner">💼 B2B Window<br><small>Kognitif segar</small></div>
+          </div>
+        </div>
+
+        <!-- 09:00 - 11:00 -->
+        <div class="tg-row" data-hour-start="9" data-hour-end="11">
+          <div class="tg-time">09:00<br><span>11:00</span></div>
+          <div class="tg-cell tg-cell--ok">
+            <div class="tc-inner">🌅 Jendela Pagi<br><small>Edukatif/Spiritual</small></div>
+          </div>
+          <div class="tg-cell tg-cell--none">
+            <div class="tc-inner">–</div>
+          </div>
+          <div class="tg-cell tg-cell--none">
+            <div class="tc-inner">–</div>
+          </div>
+        </div>
+
+        <!-- 11:00 - 14:00 -->
+        <div class="tg-row" data-hour-start="11" data-hour-end="14">
+          <div class="tg-time">11:00<br><span>14:00</span></div>
+          <div class="tg-cell tg-cell--good">
+            <div class="tc-inner">☀️ Jendela Siang<br><small>Hiburan ringan</small></div>
+          </div>
+          <div class="tg-cell tg-cell--good">
+            <div class="tc-inner">☀️ Reses Siang<br><small>Upload jam 11:00</small></div>
+          </div>
+          <div class="tg-cell tg-cell--best">
+            <div class="tc-inner">🛒 E-Commerce Peak<br><small>Impuls beli tertinggi</small></div>
+          </div>
+        </div>
+
+        <!-- 14:00 - 16:00 -->
+        <div class="tg-row" data-hour-start="14" data-hour-end="16">
+          <div class="tg-time">14:00<br><span>16:00</span></div>
+          <div class="tg-cell tg-cell--ok">
+            <div class="tc-inner">📱 Jam Pulang Sekolah<br><small>Gaming / Hiburan</small></div>
+          </div>
+          <div class="tg-cell tg-cell--ok">
+            <div class="tc-inner">📱 Jam Pulang Sekolah<br><small>Konten gaming</small></div>
+          </div>
+          <div class="tg-cell tg-cell--ok">
+            <div class="tc-inner">⏳ Preparation<br><small>Siapkan konten malam</small></div>
+          </div>
+        </div>
+
+        <!-- 16:00 - 19:00 -->
+        <div class="tg-row" data-hour-start="16" data-hour-end="19">
+          <div class="tg-time">16:00<br><span>19:00</span></div>
+          <div class="tg-cell tg-cell--upload">
+            <div class="tc-inner">📤 UPLOAD SEKARANG<br><small>Agar matang jam 19:00!</small></div>
+          </div>
+          <div class="tg-cell tg-cell--upload">
+            <div class="tc-inner">📤 UPLOAD SEKARANG<br><small>Pre-prime indexing</small></div>
+          </div>
+          <div class="tg-cell tg-cell--good">
+            <div class="tc-inner">✈️ Kuliner/Travel<br><small>Pre-dinner inspiration</small></div>
+          </div>
+        </div>
+
+        <!-- 19:00 - 22:00 -->
+        <div class="tg-row tg-row--prime" data-hour-start="19" data-hour-end="22">
+          <div class="tg-time tg-time--prime">19:00<br><span>22:00</span><div class="prime-badge">PRIME TIME</div></div>
+          <div class="tg-cell tg-cell--best">
+            <div class="tc-inner">🔥 GOLDEN HOUR<br><small>Puncak absolut nasional</small></div>
+          </div>
+          <div class="tg-cell tg-cell--best">
+            <div class="tc-inner">🔥 PRIME TIME<br><small>Watch time tertinggi</small></div>
+          </div>
+          <div class="tg-cell tg-cell--best">
+            <div class="tc-inner">🔥 GOLDEN HOUR<br><small>Relaksasi sosial malam</small></div>
+          </div>
+        </div>
+
+        <!-- 22:00 - 00:00 -->
+        <div class="tg-row" data-hour-start="22" data-hour-end="24">
+          <div class="tg-time">22:00<br><span>00:00</span></div>
+          <div class="tg-cell tg-cell--tt-live">
+            <div class="tc-inner">🔴 TikTok LIVE<br><small>Strategi defensif</small></div>
+          </div>
+          <div class="tg-cell tg-cell--none">
+            <div class="tc-inner">😴 Tidak Aktif</div>
+          </div>
+          <div class="tg-cell tg-cell--good">
+            <div class="tc-inner">🌙 Anomali Jum→Sab<br><small>Kompetisi ~0</small></div>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Legend -->
+      <div class="legend">
+        <div class="leg-item"><span class="leg-dot leg-dot--best"></span> Prime Time Terkuat</div>
+        <div class="leg-item"><span class="leg-dot leg-dot--upload"></span> Waktu Upload Ideal</div>
+        <div class="leg-item"><span class="leg-dot leg-dot--good"></span> Direkomendasikan</div>
+        <div class="leg-item"><span class="leg-dot leg-dot--ok"></span> Memadai</div>
+        <div class="leg-item"><span class="leg-dot leg-dot--none"></span> Tidak Direkomendasikan</div>
+        <div class="leg-item"><span class="leg-dot leg-dot--live"></span> TikTok Live</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== KEY AXIOMS ===== -->
+  <section class="axioms-section">
+    <div class="container">
+      <div class="section-tag">🧠 PRINSIP UNIVERSAL</div>
+      <h2 class="axioms-title">HUKUM TIDAK TERTULIS<br>ALGORITMA SOSMED 2026</h2>
+
+      <div class="axioms-grid">
+        <div class="axiom-card" id="ax-1">
+          <div class="ax-icon">🎯</div>
+          <div class="ax-number">01</div>
+          <div class="ax-title">KUALITAS > KUANTITAS</div>
+          <div class="ax-desc">1 video dengan retensi 80% mengalahkan 10 video dengan retensi 30%. Berlaku di semua 3 platform tanpa kecuali.</div>
+          <div class="ax-platforms">
+            <span class="axp axp--tt">TikTok</span>
+            <span class="axp axp--yt">YouTube</span>
+            <span class="axp axp--fb">Facebook</span>
+          </div>
+        </div>
+        <div class="axiom-card" id="ax-2">
+          <div class="ax-icon">⏰</div>
+          <div class="ax-number">02</div>
+          <div class="ax-title">19:00–22:00 WIB = UNIVERSAL PRIME TIME</div>
+          <div class="ax-desc">Tiga platform setuju di satu waktu. Penonton rileks total, retensi tertinggi, distribusi algoritma meledak. Hanya TikTok yang juga kuat jam 21:00–00:00.</div>
+          <div class="ax-platforms">
+            <span class="axp axp--tt">TikTok</span>
+            <span class="axp axp--yt">YouTube</span>
+            <span class="axp axp--fb">Facebook</span>
+          </div>
+        </div>
+        <div class="axiom-card" id="ax-3">
+          <div class="ax-icon">⚡</div>
+          <div class="ax-number">03</div>
+          <div class="ax-title">3 DETIK = SEGALANYA</div>
+          <div class="ax-desc">Hook pertama 3 detik menentukan nasib konten. Gagal di sini = bounce rate tinggi = algoritma mengkarantina video Anda dari distribusi luas.</div>
+          <div class="ax-platforms">
+            <span class="axp axp--tt">TikTok</span>
+            <span class="axp axp--yt">YouTube</span>
+            <span class="axp axp--fb">Facebook</span>
+          </div>
+        </div>
+        <div class="axiom-card" id="ax-4">
+          <div class="ax-icon">📅</div>
+          <div class="ax-number">04</div>
+          <div class="ax-title">SELASA & RABU = HARI TERKUAT</div>
+          <div class="ax-desc">Momentum operasional mapan. Audiens aktif mencari selingan. Semua 3 platform menunjukkan puncak keterlibatan di pertengahan pekan. Simpan konten terbaik untuk Selasa!</div>
+          <div class="ax-platforms">
+            <span class="axp axp--tt">TikTok</span>
+            <span class="axp axp--yt">YouTube</span>
+            <span class="axp axp--fb">Facebook</span>
+          </div>
+        </div>
+        <div class="axiom-card" id="ax-5">
+          <div class="ax-icon">💀</div>
+          <div class="ax-number">05</div>
+          <div class="ax-title">JANGAN DELETE VIDEO GAGAL</div>
+          <div class="ax-desc">Menghapus lalu re-upload adalah pemicu shadowban #1 di semua platform. Tunggu 24–48 jam, biarkan algoritma menyelesaikan distribusi uji coba awal.</div>
+          <div class="ax-platforms">
+            <span class="axp axp--tt">TikTok</span>
+            <span class="axp axp--yt">YouTube</span>
+            <span class="axp axp--fb">Facebook</span>
+          </div>
+        </div>
+        <div class="axiom-card" id="ax-6">
+          <div class="ax-icon">📤</div>
+          <div class="ax-number">06</div>
+          <div class="ax-title">UPLOAD 2–3 JAM SEBELUM PRIME TIME</div>
+          <div class="ax-desc">Server butuh waktu indexing metadata. Upload 16:00–17:00 WIB agar distribusi matang tepat saat 185 juta pengguna membanjiri feed di malam hari.</div>
+          <div class="ax-platforms">
+            <span class="axp axp--tt">TikTok</span>
+            <span class="axp axp--yt">YouTube</span>
+            <span class="axp axp--fb">Facebook</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-inner">
+        <div class="footer-brand">
+          <div class="fb-dots">
+            <span class="bd bd--tt"></span>
+            <span class="bd bd--yt"></span>
+            <span class="bd bd--fb"></span>
+          </div>
+          <div class="fb-name">SOSMED<span>HUB</span></div>
+          <p>Dashboard strategi sosial media Indonesia 2026. Berbasis data riset mendalam dari 3 platform terbesar.</p>
+        </div>
+        <div class="footer-links-grid">
+          <div class="flg-col">
+            <div class="flg-title">♪ TikTok Strategy</div>
+            <a href="../tiktok/" target="_blank">Buka Dashboard →</a>
+            <span>1–3 post/hari · WIB Prime Time</span>
+            <span>Dead Zone: 02:00–05:00 WIB</span>
+          </div>
+          <div class="flg-col">
+            <div class="flg-title">▶ YouTube Shorts</div>
+            <a href="../yt-shorts/" target="_blank">Buka Dashboard →</a>
+            <span>3–5 post/minggu · VVSA kritis</span>
+            <span>Jumat = Hari Terkuat Global</span>
+          </div>
+          <div class="flg-col">
+            <div class="flg-title">f Facebook Reels</div>
+            <a href="../fb-reels/" target="_blank">Buka Dashboard →</a>
+            <span>1–2 post/hari · Meta Andromeda</span>
+            <span>Selasa & Rabu = Best Days</span>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© 2026 SosmedHub Indonesia · Semua data diperbarui April 2026</span>
+        <span>Didukung riset 1.8M+ video & 185 juta pengguna</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
