@@ -1122,21 +1122,40 @@ body {
 }
 
 @media (max-width: 768px) {
-  .navbar { padding: 10px 16px; }
+  .navbar { padding: 10px 16px; flex-wrap: wrap; justify-content: center; }
   .nav-links { display: none; }
-  .days-grid { grid-template-columns: repeat(4, 1fr); }
-  .day-card:nth-child(4n) { border-right: none; }
-  .day-card:nth-child(n+5) { border-top: var(--b); }
+  .nav-brand { font-size: 1.1rem; }
+  
+  .hero-content { padding: 90px 20px 20px; }
+  .hero-title { font-size: 3rem; line-height: 1; }
+  .hero-stats-box { grid-template-columns: 1fr; }
+  .hstat { border-right: none; border-bottom: var(--b); }
+  .hstat:last-child { border-bottom: none; }
+  
+  .demo-grid { grid-template-columns: 1fr; }
+  .demo-card { border-right: none; border-bottom: var(--b); }
+  
+  .signals-grid, .primetime-cards { grid-template-columns: 1fr; }
+  .signal-card, .pt-card { border-right: none; border-bottom: var(--b); border-top: none; }
+  .signal-card:last-child, .pt-card:last-child { border-bottom: none; }
+
+  .days-grid { grid-template-columns: repeat(2, 1fr); }
+  .day-card:nth-child(2n) { border-right: none; }
+  .day-card:nth-child(n+3) { border-top: var(--b); }
+  
   .freq-why-grid { grid-template-columns: 1fr; }
   .fw-card { border-right: none; border-bottom: var(--b); }
+  
   .footer-grid  { grid-template-columns: 1fr; gap: 28px; }
   .footer-links { grid-template-columns: 1fr; }
   .footer-bottom { flex-direction: column; text-align: center; }
+  
   .cta-box { padding: 36px 16px; }
   .exec-item { flex-direction: column; }
   .exec-num { border-right: none; border-bottom: var(--b); min-width: auto; width: 100%; }
-  .tzrow { grid-template-columns: 1.5fr 1fr 1fr; }
-  .tzrow > *:last-child { display: none; }
+  
+  .tzmatrix { overflow-x: auto; }
+  .tzrow { grid-template-columns: 120px 1fr 1fr; min-width: 500px; }
 }
 
 /* ===================================================

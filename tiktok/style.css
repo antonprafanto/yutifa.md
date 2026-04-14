@@ -1494,16 +1494,20 @@ body {
 
 @media (max-width: 768px) {
   .navbar {
-    padding: 12px 20px;
+    padding: 10px 16px; flex-wrap: wrap; justify-content: center;
   }
 
   .nav-links {
     display: none;
   }
+  
+  .nav-brand { font-size: 1.1rem; }
 
   .hero-content {
-    padding: 100px 20px 20px;
+    padding: 90px 20px 20px;
   }
+  
+  .hero-title { font-size: 3rem; line-height: 1; }
 
   .hero-stats {
     gap: 12px;
