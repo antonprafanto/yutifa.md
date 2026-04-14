@@ -1569,7 +1569,8 @@ body {
 
 @media (max-width: 768px) {
   .navbar { padding: 10px 16px; flex-wrap: wrap; justify-content: center; }
-  .nav-links { display: none; }
+  .nav-links { display: flex; flex-wrap: wrap; justify-content: center; width: 100%; margin-top: 8px; gap: 6px; }
+  .nav-links a { font-size: 0.65rem; padding: 6px 10px; }
   .nav-brand { font-size: 1.1rem; }
 
   .hero-content { padding: 90px 20px 20px; }

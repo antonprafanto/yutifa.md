@@ -1498,8 +1498,9 @@ body {
   }
 
   .nav-links {
-    display: none;
+    display: flex; flex-wrap: wrap; justify-content: center; width: 100%; margin-top: 8px; gap: 6px;
   }
+  .nlink { font-size: 0.65rem; padding: 6px 10px; }
   
   .nav-brand { font-size: 1.1rem; }
 

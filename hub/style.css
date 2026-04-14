@@ -689,7 +689,8 @@ body {
   .navbar { padding: 10px 16px; flex-wrap: wrap; justify-content: center; gap: 8px; }
   .nav-brand { font-size: 1rem; }
   .nav-time-mini { display: none; }
-  .nav-links { display: none; }
+  .nav-links { display: flex; flex-wrap: wrap; justify-content: center; width: 100%; margin-top: 8px; gap: 6px; }
+  .nlink { font-size: 0.65rem; padding: 6px 10px; }
   
   .hero-title { font-size: 3.5rem; }
   
